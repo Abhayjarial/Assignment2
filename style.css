@@ -1,0 +1,351 @@
+/* Global CSS */
+html {
+  font: 400 20px/1.5 Arial, sans-serif;
+}
+
+h1,
+h2 {
+  font-variant: small-caps;
+  color: #5e3315;
+}
+
+figcaption {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.1rem;
+}
+
+q {
+  font-style: italic;
+  font-family: cursive;
+  font-size: 1.1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+img.main-section-figure,
+figure.main-section-figure {
+  width: 80%;
+  height: auto;
+  border: 2px solid #999;
+  border-radius: 10px;
+}
+
+video,
+iframe {
+  width: 80%;
+  border: 2px solid #666;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+header,
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background: linear-gradient(to right, #7bc6cc, #be93c5);
+  border: 2px solid #333;
+}
+
+.navbar {
+    background-color: #535C91;
+    padding : .25rem;
+}
+nav ul{
+    text-align: center;
+    list-style-type: none;
+    padding: 0 1rem 2rem 1rem ;
+    margin : 0.25rem;
+}
+nav ul li a{
+    background-color: #EEE2DE;
+    border: 0.1rem solid #FDF7E4;
+    display : block;
+    text-decoration: none;
+    color: #535C91;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+nav ul li a:hover{
+    background-color: #427D9D;
+    border-color: white; 
+    color: white;
+}
+#navlink-index{
+    float : left;
+    width : 50%;
+
+}
+#navlink-contact{
+    float : right;
+    width : 50%;
+}
+
+.main-section {
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(250, 100%, 94%);
+  clear: both;
+}
+
+#bio{
+    float : left;
+}
+
+
+.main-section-figure {
+  padding: 10px;
+  margin: 10px auto;
+}
+
+#absolute-path-image,
+#relative-path-image {
+  border: 2px solid;
+  border-radius: 30px;
+}
+
+aside ul li{
+    list-style-type: none;
+}
+
+header,
+footer {
+  border: 2px solid #333;
+  background: linear-gradient(to right, #7bc6cc, #be93c5);
+}
+
+#absolute-path-image {
+  border-color: rgb(100, 200, 50);
+  background-color: hsla(60, 100%, 90%, 0.5);
+}
+
+#relative-path-image {
+  border-color: rgb(50, 100, 200);
+  background-color: hsla(240, 100%, 90%, 0.5);
+}
+
+#bio blockquote q {
+  box-shadow: 3px 3px 3px #888;
+}
+
+#quote blockquote q {
+  box-shadow: 10px 10px 58px 0px rgba(101, 130, 207, 1);
+}
+
+#bio blockquote,
+#quote blockquote q {
+  border: 1px solid #2d9596;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+footer {
+  clear: both;
+}
+
+main {
+  float: left;
+  width: 70%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+footer {
+  clear: both;
+}
+
+/* Table CSS */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 2px solid #435585;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* Links CSS */
+a {
+  text-decoration: none;
+  color: #535C91;
+  line-height: 1.5;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #2d9596;
+}
+
+/* Form CSS */
+form {
+    padding: 5%;
+    background-color: aliceblue;
+    margin: 5% 3%;
+    line-height: 2.5rem;
+    border: 1px solid #2d9596;
+}
+
+label {
+  color: #535C91;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #535C91;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #2d9596;
+}
+
+/* MEDIA QUEIRIES */
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 16px;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #relative-path-image img{
+        display: none;
+    }
+    
+    #navlink-index{
+        float : none;
+        width : 100%;
+    
+    }
+    #navlink-contact{
+        float : none;
+        width : 100%;
+    }
+
+    #quote blockquote q {
+        box-shadow: none;
+      }
+
+    main,
+    aside{
+        width: 100%;
+        float: none;
+    }
+
+    .main-section, 
+    aside{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    html{
+        font-size: 16px;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    #navlink-index{
+        float : none;
+        width : 100%;
+    
+    }
+    #navlink-contact{
+        float : none;
+        width : 100%;
+    }
+
+    main,
+    aside{
+        width: 100%;
+        float: none;
+    }
+
+    .main-section, 
+    aside{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 16px;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    #navlink-index{
+        float : none;
+        width : 100%;
+    
+    }
+    #navlink-contact{
+        float : none;
+        width : 100%;
+    }
+
+    main,
+    aside{
+        width: 100%;
+        float: none;
+    }
+
+    .main-section, 
+    aside{
+        padding: 20px;
+    }
+}
